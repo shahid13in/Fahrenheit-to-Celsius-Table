@@ -40,37 +40,4 @@ We print this information as <Fahrenheit Value> <a single space> <Celsius Value>
 You may or may not exactly land on the end value depending on the steps you are taking.*/
   
   
-  
-  #include<iostream>
-using namespace std;
-
-int main()
-{
-int S,E,W,i,cd;
-cin>>S;
-cin>>E;
-cin>>W;
-while (((S>=0)&&(S<=80)) && ((E>=S)&&(S<=900)) && ((W>=0)&&(W<=40)))
-{
-while(S<=E)
-{
-for(i=S;i<=E;i+=W)
-{
-cd=(i-32)/1.8;
-cout<<i<<"\t"<<cd<<"\n";
-S+=W;
-}
-}
-}
-}
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+ 
